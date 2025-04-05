@@ -1,0 +1,5 @@
+@charset "UTF-8";
+span { /* 嵌入式CSS */
+	color: blue;
+	font-size: 150%; 
+	}

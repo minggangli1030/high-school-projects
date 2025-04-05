@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JWD_L3_HelloCSS</title>
+		<!-- 外部式CSS -->
+		<link href="JWD_L3_HelloCSS.css" rel="stylesheet" type="text/"/> 
+		<style> 
+			
+			/* 标签选择器 */
+			span { /* 嵌入式CSS */
+				color: red;
+				font-size: 150%; 
+				}
+			input {
+				background-color: gray;
+				}
+				
+			/* ID选择器 */
+			#JAVA {
+				color: orange;
+				font-size: 800%; 
+			}
+			
+			/* 分类选择器 */
+			.highlight {
+				color: green;
+			}		
+					
+			/* 引入CSS3种链接方式的优先级：内联 > 嵌入 > 外部 */
+			/* CSS选择器优先级：ID > 分类 > 标签 */
+			/* 就近原则 */
+			
+		</style>
+	</head>
+	<body>
+		<p>
+			前端三件套: 
+			<br/>
+			<span style="color: pink; font-size: 300%;/* 内联式CSS */">HTML</span> 
+			<br/>
+			<span>CSS</span>
+			<br/>
+			<span>JAVASCRIPT</span>
+			<br/>
+			
+			后端三件套
+			<br/>
+			<span id="JAVA">JAVA</span>
+			<br/>
+			<span class="highlight">JDBC</span>
+			<br/>
+			<span class="highlight">SQL</span>
+			<br/>
+			
+			
+			用户名:<input type="text" value=""></input>
+			密码:<input type="text" value=""></input>
+			
+		</p>
+	</body>
+</html>

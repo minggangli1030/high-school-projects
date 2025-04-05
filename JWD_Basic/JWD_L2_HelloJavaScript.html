@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<title>JWD_L2_HelloJavaScript</title> 
+		<script src = "JWD_L2_HelloJavaScript.js">
+			
+			var i = 100; 
+			var str = "Hello World!"; 
+			var date = new Date(); 
+			var array = [1, 2, 3]; 
+			
+			for(var idx = 0; idx < array.length; idx++ ) {
+				alert(array[idx]); }
+			
+			var a = 100; 
+			var b = 100;
+			
+			if(a == b) {
+				alert("Equals"); }
+			else {
+				alert("Not equals"); } 
+			
+			function onSubmit() {} 
+			function add() { 
+				var number1 = document.getElementById("number1").value; 
+				var number2 = document.getElementById("number2").value; 
+				var result = parseInt(number1) + parseInt(number2); 
+				document.getElementById("result").value = result; }
+			
+					
+		</script> 
+		
+	</head> 
+	<body> 
+		<header>I am Header</header> <br/><br/> 
+		<h1>Hello World!</h1> 
+		<h2>Sub Title</h2> 
+		<hr/> 
+		<div> 
+			<p>正文:Today is Sunday, we are learning Java Web!</p > 
+		</div> 
+		<br/><br/> 
+		
+		<ul> 
+			<li>HTML</li> 
+			<li>Javascript</li> 
+			<li>CSS</li> 
+		</ul> 
+		
+		<table border="1"> 
+			<tr>
+				<th>姓名</th> 
+				<th>电话</th> 
+				<th>邮件</th> 
+			</tr> 
+			<tr> 
+				<td>张三</td> 
+				<td>13500009999</td> 
+				<td>zhangsan@163.com</td> 
+			</tr> 
+			<tr> 
+				<td>李四</td> 
+				<td>18500008888</td> 
+				<td>lisi@qq.com</td> 
+			</tr> 
+		</table> 
+		
+		<a href=" ">微软必应</a >
+		<br/> 
+		 
+		<form id="register_form" action="http://localhost:8080"> 
+			姓名: <input type="text" value="" name="register_name"></input> 
+			密码: <input type="password" value="" name="register_password"></input> 
+			<input type="submit" value="提交" onclick="onSubmit()"></input> 
+			<input type="reset" value="重置"/></input> 
+			<br/> 
+				
+			<textarea rows="7" cols="20">请在此处输入文本</textarea> 
+				数学<input type="radio" value="数学" name="课程" /> 
+				英语<input type="radio" value="英语" name="课程" /> 
+			 	语文<input type="radio" value="语文" name="课程" /> 
+			 	其他<input type="text" value="" name="课程" /> 
+		 </form> 
+			 
+		<input id="number1" type="text" value=""/> + <input id="number2" type="text" value=""/> <input type="button" value=" = " onclick="add()"/> <input id="result" type="text" value=""/>
+			 
+		<img src="https://cn.bing.com/th?id=OHR.YoshinoyamaSpring_ZH-CN5545606722_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp"></img>
+		<footer>I am Footer</footer>
+	</body> 
+</html>
